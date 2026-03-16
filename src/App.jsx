@@ -2,6 +2,7 @@ import ButtonGradient from "./assets/svg/ButtonGradient";
 import NavbarSection from "./sections/navbar/navbarSection";
 import HeroSection from "./sections/hero/heroSection";
 import BenefitsSection from "./sections/benefits/benefitsSection";
+import CollaborationSection from "./sections/collaboration/collaborationSection";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
         <NavbarSection />
         <HeroSection />
         <BenefitsSection />
+        <CollaborationSection />
       </div>
       <ButtonGradient />
     </>
