@@ -2,10 +2,11 @@ import { useLocation } from "react-router-dom";
 import { brainwave } from "../../assets";
 import { navigation } from "../../constants";
 import MenuSvg from "../../assets/svg/MenuSvg";
-import Button from "../ui/Button";
-import { HamburgerMenu } from ".././design/Header";
+import Button from "../../components/ui/Button";
+import { HamburgerMenu } from "./visuals/Header";
 import { useState } from "react";
-const Header = () => {
+
+const NavbarSection = () => {
   const path = useLocation();
 
   const [openNav, setOpenNav] = useState(false);
@@ -64,4 +65,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default NavbarSection;

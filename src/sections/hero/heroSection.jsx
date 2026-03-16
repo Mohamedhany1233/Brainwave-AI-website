@@ -1,23 +1,20 @@
-import Section from "../design/section";
 import { curve, heroBackground, robot } from "../../assets";
-import Button from "../ui/Button";
-import {
-  BackgroundCircles,
-  BottomLine,
-  Gradient,
-} from "../../components/design/Hero";
+import Button from "../../components/ui/Button";
+import { BackgroundCircles, BottomLine, Gradient } from "./visuals/Hero";
 import { heroIcons } from "../../constants";
 import { ScrollParallax } from "react-just-parallax";
 import { useRef } from "react";
-import Generating from "../design/Generating";
-import Notification from "../design/Notification";
+import Generating from "./visuals/Generating";
+import Notification from "./visuals/Notification";
+import Section from "../../components/ui/section";
+import CompanyLogos from "./companyLogos";
 
-const Hero = () => {
+const HeroSection = () => {
   const parallaxRef = useRef(null);
 
   return (
     <Section
-      className="pt-[12rem] -mt-[0.25rem]"
+      className="pt-[12rem] -mt-[5.80rem] mb-32 lg:mb-0 overflow-hidden sm:-mt-[2.80rem]"
       crosses
       crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
@@ -43,7 +40,7 @@ const Hero = () => {
             Unleash the power of AI within Brainwave. Upgrade your productivity
             with Brainwave, the open AI chat app.
           </p>
-          <Button href="/pricing" white>
+          <Button href="#pricing" white>
             Get Started
           </Button>
         </div>
@@ -52,6 +49,7 @@ const Hero = () => {
           <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
             <div className="relative bg-n-8 rounded-[1rem]">
               <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
+              {/* robot Image */}
               <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
                 <img
                   src={robot}
@@ -94,10 +92,15 @@ const Hero = () => {
           </div>
           <BackgroundCircles />
         </div>
+
+        {/* Logos */}
+        <div>
+          <CompanyLogos className="hidden relative z-10 mt-12 lg:block" />
+        </div>
       </div>
       <BottomLine />
     </Section>
   );
 };
 
-export default Hero;
+export default HeroSection;

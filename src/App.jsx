@@ -1,14 +1,15 @@
 import ButtonGradient from "./assets/svg/ButtonGradient";
-import Header from "./components/layout/Header";
-import Hero from "./components/home/hero";
-import Button from "./components/ui/Button";
+import NavbarSection from "./sections/navbar/navbarSection";
+import HeroSection from "./sections/hero/heroSection";
+import BenefitsSection from "./sections/benefits/benefitsSection";
 
 const App = () => {
   return (
     <>
       <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
-        <Header />
-        <Hero />
+        <NavbarSection />
+        <HeroSection />
+        <BenefitsSection />
       </div>
       <ButtonGradient />
     </>
