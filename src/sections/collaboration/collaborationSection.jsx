@@ -52,7 +52,7 @@ const CollaborationSection = () => {
               {collabApps.map((c, i) => (
                 <li
                   key={c.id}
-                  className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom rotate-${i * 45}`}
+                  className={`absolute -top-3 left-1/2 h-[53%] -ml-[1.6rem] origin-bottom rotate-${i * 45}`}
                 >
                   <div
                     className={`reltative flex w-[3.2rem] h-[3.2rem] border-n-1/15 border bg-n-7 rounded-xl -top-[1.6rem] -rotate-${i * 45}`}
