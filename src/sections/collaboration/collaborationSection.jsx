@@ -8,7 +8,7 @@ import Heading from "../../components/ui/Heading";
 const CollaborationSection = () => {
   return (
     <Section crosses>
-      <div className="container lg:flex">
+      <div className="container  lg:flex">
         {/* Collaboration Content on the left */}
         <div className="max-w-[25rem]">
           <Heading

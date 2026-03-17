@@ -15,7 +15,7 @@ const BenefitsSection = () => {
         />
       </div>
 
-      <div className="container flex flex-wrap items-center justify-center gap-10 mb-10">
+      <div className="container  flex flex-wrap items-center justify-center gap-10 mb-10">
         {benefits.map((b) => (
           <div
             key={b.id}
