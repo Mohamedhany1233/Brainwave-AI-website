@@ -14,7 +14,7 @@ const HeroSection = () => {
 
   return (
     <Section
-      className="pt-[12rem] -mt-[5.80rem] mb-32 lg:mb-0 overflow-hidden sm:-mt-[2.80rem]"
+      className="pt-[12rem] -mt-[5.80rem]  overflow-hidden sm:-mt-[2.80rem]"
       crosses
       crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
